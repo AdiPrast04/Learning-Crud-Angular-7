@@ -1,0 +1,12 @@
+<table class="table table-hover">
+    <tr *ngFor="let ud of service.list">
+        <td (click)="populateForm(ud)">{{ud.UserName}}</td>
+        <td (click)="populateForm(ud)">{{ud.UserNumber}}</td>
+        <td (click)="populateForm(ud)">{{ud.JoinDate}}</td>
+        <td (click)="populateForm(ud)">{{ud.IsDeleted}}</td>
+        <td class="i far fa-trash-alt fa-lg text-danger" (click)="deletedUserById(ud.UserId)">
+
+        </td>
+    </tr>
+</table>
+
